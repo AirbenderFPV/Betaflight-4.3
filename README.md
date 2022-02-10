@@ -1,5 +1,6 @@
-# Betaflight 4.3.
-Ajustes y consejos para Betaflight 4.3
+
+***ESTE POST ESTA EN DESAROLLO***
+
 
 # Betaflight v4.3.x
 
@@ -9,25 +10,18 @@ En este repositorio iré actualizando las mejoras de **Betaflight 4.3.x** así c
 El uso de esta información queda bajo la responsabilidad de cada usuario y siendo consciente del quad que tiene.  
 Recordad que para usar esta versión de Betaflight es necesario el **Betaflight Configurator version 10.8.0**.  
 
-Nuevas aportaciones de esta versión:  
-- Han reprogramado completamente la forma de leer el loop del giroscópico, esto ha provocado un mejor rendimiento y lo hace trabajar a la velocidad nativa del giroscopio, por lo que no lo puedes cambiar, viene por defecto.
-- Nuevos modelos de Rates, mas fácil de configurar desde el OSD, con ajustes mas optimizados y rápidos
-- Nuevo sistema de compensación por la caída del voltaje de la batería, lo que resulta en un comportamiento más uniforme del acelerador/PID durante todo el tiempo de vuelo.
-- Han añadido un nuevo modelo de carrera, el NEF, que esta pensado mas para los tinys, este modo combina el acro para el eje de pith, y horizont en el eje del ROLL.
-- Muchas mejoras en el OSD, como poner el logo poner el logo, funciones añadidas para Frsky.
-- Podrás bindear receptores Frsky con soporte SPI desde el propio betaflight 4.2 sin entrar por el CLI.
-- Ahora es obligatorio calibrar el acelerómetro.
-Hay mas mejoras en el betaflight 4.2 he resumido las que son la principales y debes tener en cuenta antes de realizar el cambio. 
+Dados los errores del configurador en sus versiones 10.8.0 se aconseja el Release Candidate 3
+https://github.com/betaflight/betaflight-configurator/releases/tag/10.8.0-RC3
 
 Si tienes dudas de como descargarte el configurador o como alcualizar el firmware visita los repositorios:  
 
-[Actualizar firmware 4.2.x]   
+[Actualizar firmware 4.3.x]   
 https://github.com/AirbenderFPV/Actualizar-Firmware
 
-[Actualizar/Instalar el Configurador de Betaflight v10.7]  
-https://github.com/betaflight/betaflight-configurator/releases/download/10.7.0/betaflight-configurator-installer_10.7.0_win32.exe
+[Actualizar/Instalar el Configurador de Betaflight v10.8.xx]  
+https://github.com/betaflight/betaflight-configurator/releases
 
-## Menú Betaflight 4.2.x  
+## Menú Betaflight 4.3.x  
 
 ### Pantalla de Ajustes  
 
@@ -173,7 +167,7 @@ https://github.com/betaflight/blackbox-log-viewer
 
 [Notas oficiales de la versión] https://github.com/betaflight/betaflight/wiki/4.2-Tuning-Notes  
 
-[Joshua Bardwell] https://www.youtube.com/watch?v=rhfOVJMxY7E  
+[Joshua Bardwell] https://www.youtube.com/watch?v=CCbaHjF-ZL0
 
 [QuadMx Drones] https://www.youtube.com/watch?v=tCgN-EwdSQ8   
  
