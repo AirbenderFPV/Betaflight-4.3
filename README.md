@@ -7,8 +7,10 @@
 <img src="https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/betaflight/bf_logo.png">
 
 En este repositorio iré actualizando las mejoras de **Betaflight 4.3.x** así como las configuraciones recomendadas al actualizar a esta version.   
-El uso de esta información queda bajo la responsabilidad de cada usuario y siendo consciente del quad que tiene.  
-Recordad que para usar esta versión de Betaflight es necesario el **Betaflight Configurator version 10.8.0**.  
+El uso de esta información queda bajo la responsabilidad de cada usuario.  
+Recordad que para usar esta versión de Configurador de Betaflight es necesario el **Betaflight Configurator version 10.8.0**.  
+
+
 
 Dados los errores del configurador en sus versiones 10.8.0 se aconseja el Release Candidate 3
 https://github.com/betaflight/betaflight-configurator/releases/tag/10.8.0-RC3
@@ -21,15 +23,26 @@ https://github.com/AirbenderFPV/Actualizar-Firmware
 [Actualizar/Instalar el Configurador de Betaflight v10.8.xx]  
 https://github.com/betaflight/betaflight-configurator/releases
 
+Si aún estas usando la versión de Configurador de Betaflight **Betaflight Configurator version 10.7.0** lo mas aconsejable es desinstalar ese configurador previamente.
+Para trabajar con ese configurador y versiones de firmware v4.2.9 se aconseja usar el configurador antiguo **Betaflight Configurator version 10.7.0**
+Mas información sobre versiones anteriores: https://github.com/AirbenderFPV/Betaflight-4.2.0
+
 ## Menú Betaflight 4.3.x  
+
+Antes de detallar las diferentes pestañas de ajuste de esta versión y sus ajustes, mencionar que se ha usado la **version 4.3 - RC2** de firmware.
+Al instalar la versión de firmware y conectar la placa por primera vez aparecera un mensaje para **Aplicar los valores por defecto**, es muy importante hacer este paso correctamente o puede ser que betaflight no reconozca todas las propiedades de tu controladora (FC).
+
+
+NO ACTUALIZADO - EN PROGRESO
+======================================================================
 
 ### Pantalla de Ajustes  
 
-En esta versión de Betaflight es **obligatorio calibrar** nuestro quad si vamos a usar los modos **Angle** o **Horizon**.
+En esta versión de Betaflight es **obligatorio calibrar** nuestro almenos una vez antes de volar.
 
 <img src="https://raw.githubusercontent.com/AirbenderFPV/Betaflight-4.2.0/main/images/Ajuste.PNG">
 
-Para **Calibrar el Acelerómetro** situar nuestro quad en una superficie plana y dar al botón.   
+Para **Calibrar el Acelerómetro** situar nuestro quad en una superficie plana y dar al botón de calibrar.   
 Es aconsejable hacer una copia de seguridad antes de hacer cambios importantes, por si tenemos que deshacer estos cambios de forma rapida.
 
 ### Pantalla de Configuración  
