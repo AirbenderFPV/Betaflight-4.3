@@ -7,7 +7,7 @@ En este repositorio iré actualizando las mejoras de **Betaflight 4.3.x** así c
 El uso de esta información queda bajo la responsabilidad de cada usuario.  
 Recordad que para usar esta versión de Configurador de Betaflight es necesario el **Betaflight Configurator version 10.8.0**.  
 
-Dados los errores del configurador en sus versiones 10.8.0 se aconseja el Release Candidate 3 
+Dados los errores del configurador en sus versiones 10.8.0 se aconseja el Release Candidate 3   
 https://github.com/betaflight/betaflight-configurator/releases/tag/10.8.0-RC3 
 
 Si tienes dudas de como descargarte el configurador o como alcualizar el firmware visita los repositorios:  
@@ -36,11 +36,26 @@ En esta versión de Betaflight es **obligatorio calibrar** nuestro almenos una v
 <img src="https://raw.githubusercontent.com/AirbenderFPV/Betaflight-4.2.0/main/images/01_Ajuste.PNG">  
 
 Para **Calibrar el Acelerómetro** situar nuestro quad en una superficie plana y dar al botón de calibrar.   
-Es aconsejable hacer una copia de seguridad antes de hacer cambios importantes, por si tenemos que deshacer estos cambios de forma rapida.
+
 
 ### Pantalla de Configuración  
 
 <img src="https://raw.githubusercontent.com/AirbenderFPV/Betaflight-4.2.0/main/images/03_Configuración.PNG">  
+
+El **Acelerómetro** es el sensor que nos ayuda a controlar la inclinazión del quad.    
+En caso de volar en **Angle Mode** o **Horizon Mode** necesitas tener activado este sensor.  
+Revisa la pantalla de Ajustes para ver como calibrar el quad si usas esos modos.  
+Normalmente las controladoras de vuelo no trae equipado un Barómetro ni un Magnetómetro.   
+Lo mejor en estos casos es **Desactivar** estos dos sensores.  
+
+Las frequencias del sersor Giro y del PID son importantisimas para volar.  
+Estas estan condicionadas a el tipo de controladora de vuelo tengamos, una F7 irá mejor que una F4.  
+Si tienes poca experiencia es mejor dejar los ajustes por defecto.  
+
+Recomendaciones generales:  
+
+dshot300 -> 4k max pidloop (Recomendable para controladoras F4)  
+dshot600 -> 8k max pidloop (Recomendable para controladoras F7)     
 
 ### Pantalla de Energía y Batería
 
@@ -63,6 +78,17 @@ Para mas información visita:
 
 [Repertorio Baterias] https://github.com/AirbenderFPV/Baterias
 
+### PREAJUSTES
+
+Uno de los mayores cambios en esta version de configurador, la pantalla de Preajustes o "Presets" que pueden ser de mucha ayuda para adaptar los ajustes de tu quad.   
+No se aconseja hacer cambios y empezar poniendo presets si estas empezando en el hobby.
+
+<img src="https://raw.githubusercontent.com/AirbenderFPV/Betaflight-4.2.0/main/images/05_Preajuste.PNG">  
+
+Es aconsejable hacer una copia de seguridad antes de hacer cambios importantes, por si tenemos que deshacer estos cambios de forma rapida.  
+
+Nota: Publicaré los ajustes y presets y podrás encontrarlos en el configurador, de momento visita el apartado de la pantalla CLI.  
+
 
 Pantalla de Ajustar PID
 =====================
@@ -80,34 +106,34 @@ Si no estas seguro de como funciona marca Betaflight y pon los rates que tenias 
 
 <img src="https://raw.githubusercontent.com/AirbenderFPV/Betaflight-4.2.0/main/images/061_Tasas.PNG">
 
+Los rates o tasas que muestran la imagen son los que he provado en esta version.  
+Si os parecen muy agresivos o quereis un vuelo mas smooth podeis bajar las Tasas RC a 1.00 y anular la Expo RC en 0.  
+
+
 #### FILTROS  
 Esta pestaña nos ayuda a filtrar las señales de nuestro quad, si tienes poca experiencia es mejor dejar los ajustes por defecto.  
 
-<img src="https://raw.githubusercontent.com/AirbenderFPV/Betaflight-4.2.0/main/images/062_Filtros.PNG">
-
-Es muy recomendable en esta pestaña editar los valores del **Filtro Notch Dinámico** situado en la parte inferior izquierda.  
-Los valores recomdendados y provados por Joshua Bradwell son los que aparecen en la imagen.  
-Giro Filtro Notch Dinámico Ancho = 0  
-Giro Filtro Notch Dinámico Q =250   
-Giro Filtro Notch Dinámico Min =90  
-Giro Filtro Notch Dinámico Max =350   
+<img src="https://raw.githubusercontent.com/AirbenderFPV/Betaflight-4.2.0/main/images/062_Filtros.PNG">   
 
 Además, los valores multiplicadores **Filtro Giro** y **Filtro D Term** se pueden mover un poco para filtrar menos la señal que enviamos a nuestro quad y tener una respuesta mas rapida. Hay que mover los dos por igual.  
 
 Personalmente he provado el valor **1.2 en ambos**, si provais alguno y no os convence volver a el valor por defecto 1 en ambos.  
 
-Para mas información de ajustes rapidos recomendados visita:
-
-[Ajustes rapidos recomendados en Betaflight 4.2.x] https://github.com/AirbenderFPV/Ajustes-rapidos-recomendados-en-Betaflight-4.2.x
-
+Es muy recomendable en esta pestaña editar los valores del **Filtro Notch Dinámico** situado en la parte inferior izquierda.  
+Aún por confirmar, los valores recomdendados y provados por Joshua Bradwell y UAV Tech en 4.2 eran:  
+Giro Filtro Notch Dinámico Q =250   
+Giro Filtro Notch Dinámico Min =90  
+Giro Filtro Notch Dinámico Max =350
 
 ### Pantalla de Modos
 
-Será necesario volver a configurar esta pantalla.
+En esta pestaña se configuran los modos que tendrá tu quad.  
 
 ### Pantalla de OSD
 
-Será necesario volver a configurar esta pantalla.
+En esta pestaña se configura el OSD.  
+Es importante añadir que en esta versión hay mas elementos compatibles con el sistema digital de DJI pero aún no podemos visualizar ciertos parametros como...  
+Si tienes problemas para visualizar el OSD tienes que revisar la conexión entre FC y VTX/Caddx.  
 
 ### Pantalla de Transmisor de Video
 
@@ -115,45 +141,21 @@ Será necesario volver a cargar la tabla de nuestro VTX (Archivo.JSON) y tener c
 
 [Repertorio VTX] https://github.com/AirbenderFPV/VTX
 
-#### MOTORES:  
+### MOTORES:  
 
 <img src="https://raw.githubusercontent.com/AirbenderFPV/Betaflight-4.2.0/main/images/07_Motores.PNG">  
-
-Por defecto el numero de **Polos del motor** viene como 14. Estos son el numero de imanes que tiene tu campana de motor.  
-En tinnys a veces este numero se reduce ya que los motores son mas pequeños. Rondan sobre 12.  
-Lo mejor es asegurarse mirando una campana de nuestros motores.  
 
 
 #### Configuración del sistema y DShot settings:  
 
-El **Acelerómetro** es el sensor que nos ayuda a controlar la inclinazión del quad.    
-En caso de volar en **Angle Mode** o **Horizon Mode** necesitas tener activado este sensor.  
-Revisa la pantalla de Ajustes para ver como calibrar el quad si usas esos modos.  
-Normalmente las controladoras de vuelo no trae equipado un Barómetro ni un Magnetómetro.   
-Lo mejor en estos casos es **Desactivar** estos dos sensores.  
 
-Las frequencias del sersor Giro y del PID son importantisimas para volar.  
-Estas estan condicionadas a el tipo de controladora de vuelo tengamos, una F7 irá mejor que una F4.  
-Si tienes poca experiencia es mejor dejar los ajustes por defecto.  
 Consulta en las especificaciones de tus ESCs o 4in1 que DSHOT tiene antes de aplicar cualquier corrección.  
 Se puede habilitar el bidirectional con el switch **DShot Bidirectional**.  
 También hay que consultar en las especificaciones de tus ESCs o 4in1 si lo soporta.  
 
-- Con el filtro rpm habilitado   
+Recomendaciones generales:  
 dshot300 -> 4k max pidloop (Recomendable para controladoras F4)  
 dshot600 -> 8k max pidloop (Recomendable para controladoras F7)   
-
-- Usando el bidirectional y con el filtro rpm habilitados:     
-
-dshot150 -> 2k max pidloop   
-dshot300 -> 4k max pidloop (Recomendable para controladoras F4)     
-dshot600 -> 8k max pidloop (Recomendable para controladoras F7)    
-
-- Sin usar el bidirectional y con el filtro rpm habilitados:    
-
-dshot150 -> 4k max pidloop (Recomendable para controladoras F4)   
-dshot300 -> 8k max pidlopp (Recomendable para controladoras F7)  
-dshot600 -> up to 16k max pidloop (8k es el maximo que se puede configurar en la versión 4.2)  
 
 Para la actualización de firmware de los ESC o 4in1 visita:
 
@@ -170,12 +172,19 @@ Descarga el software para ver los log de la caja negra:
 https://github.com/betaflight/blackbox-log-viewer
 
 
+
 ### CLI
 
+La consola de comandos o CLI, es una pestaña que nos deja escribir comandos a nuestra controladora minimizando el tiempo ya que podemos ajustar nuestro quad en un momento sin necesidad de recorrer pestaña a pestaña para cambiar un parametro en cada una.  
 
-<img src="https://raw.githubusercontent.com/AirbenderFPV/Betaflight-4.2.0/main/images/08_CLI.PNG">  
+<img src="https://raw.githubusercontent.com/AirbenderFPV/Betaflight-4.2.0/main/images/08_CLI.PNG">   
 
+Es importantisimo hacer una copia de seguridad antes de aplicar cambios en el CLI, para prevenir.  
 
+El comando mas usual es el _diff_ que nos mostrara todos los ajustes que tenemos diferentes a la configuración inicial de betaflight.  
+Este comando es muy útil para hacer copias de seguridad, ya que podemos escribir ese comando y copiar en un .txt el resultado que nos da el CLI para tener una copia de seguridad de nuestra configuración.  
+
+El comando que no podemos olvidar es el _Save_ después de aplicar cambios tendremos que guardar siempre nuestra configuración. No os preucupeis si betaflight desconecta la controladora por un momento y teneis que volver a conectar. De esta forma estareis seguros de que se ha guardado correctamente vuestra configuración.    
 
 
 
@@ -183,6 +192,8 @@ https://github.com/betaflight/blackbox-log-viewer
 #### Fuentes de información
 
 [Notas oficiales de la versión] https://github.com/betaflight/betaflight/wiki/4.2-Tuning-Notes  
+
+[UAV Tech] https://theuavtech.com/tuning/
 
 [Joshua Bardwell] https://www.youtube.com/watch?v=CCbaHjF-ZL0
 
