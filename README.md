@@ -1,6 +1,5 @@
 
 # Betaflight v4.3.x
-========================
 
 <img src="https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/betaflight/bf_logo.png">
 
@@ -72,12 +71,14 @@ Pantalla de Ajustar PID
 
 Esta pestaña nos ayuda a calibrar el PID de nuestro quad, si tienes poca experiencia es mejor dejar los ajustes por defecto.  
 
-[PIDs] https://github.com/AirbenderFPV/PID-Betaflight-4.2/edit/main/README.md
+<img src="https://raw.githubusercontent.com/AirbenderFPV/Betaflight-4.2.0/main/images/06_Pids.PNG">
 
 #### TASAS  
 
 En esta versión de Betaflight podemos usar los rates de otros configuradores.  
 Si no estas seguro de como funciona marca Betaflight y pon los rates que tenias en anteriores versiones.
+
+<img src="https://raw.githubusercontent.com/AirbenderFPV/Betaflight-4.2.0/main/images/061_Tasas.PNG">
 
 #### FILTROS  
 Esta pestaña nos ayuda a filtrar las señales de nuestro quad, si tienes poca experiencia es mejor dejar los ajustes por defecto.  
