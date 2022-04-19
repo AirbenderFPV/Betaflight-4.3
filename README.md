@@ -4,19 +4,15 @@
 <img src="https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/betaflight/bf_logo.png">
 
 En este repositorio iré actualizando las mejoras de **Betaflight 4.3.x** así como las configuraciones recomendadas al actualizar a esta version.   
-El uso de esta información queda bajo la responsabilidad de cada usuario.  
-Recordad que para usar esta versión de Configurador de Betaflight es necesario el **Betaflight Configurator version 10.8.0**.  
-
+ 
+Recordad que para usar esta versión de Configurador de Betaflight es necesario el **Betaflight Configurator version 10.8.0**.    
 Dados los errores del configurador en sus versiones 10.8.0 se aconseja el Release Candidate 3   
-https://github.com/betaflight/betaflight-configurator/releases/tag/10.8.0-RC3 
 
 Si tienes dudas de como descargarte el configurador o como alcualizar el firmware visita los repositorios:  
 
-[Actualizar firmware 4.3.x]   
-https://github.com/AirbenderFPV/Actualizar-Firmware  
+[Actualizar firmware 4.3.x] https://github.com/AirbenderFPV/Actualizar-Firmware   
 
-[Actualizar/Instalar el Configurador de Betaflight v10.8.xx]  
-https://github.com/betaflight/betaflight-configurator/releases   
+[Configurador de Betaflight v10.8.xx] https://github.com/betaflight/betaflight-configurator/releases/tag/10.8.0-RC3   
 
 Si aún estas usando **Betaflight Configurator version 10.7.0** lo mas aconsejable es desinstalar ese configurador previamente.  
 Para trabajar con versiones de firmware v4.2.9 se aconseja usar **Betaflight Configurator version 10.7.0**  
@@ -204,3 +200,6 @@ El comando que no podemos olvidar es el _Save_ después de aplicar cambios tendr
 [Multicoptero X] http://www.multicopterox.es/configuracion-betaflight-matek-f405/#ESC_beacon_configuration
 
 [Airbender_FPV] https://www.instagram.com/airbender_fpv/
+
+
+_El uso de esta información queda bajo la responsabilidad de cada usuario._  
