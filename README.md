@@ -33,6 +33,10 @@ En esta versión de Betaflight es **obligatorio calibrar** nuestro almenos una v
 
 Para **Calibrar el Acelerómetro** situar nuestro quad en una superficie plana y dar al botón de calibrar.   
 
+### Puertos  
+
+<img src="https://raw.githubusercontent.com/AirbenderFPV/Betaflight-4.2.0/main/images/02_Puertos.PNG"> 
+
 
 ### Pantalla de Configuración  
 
