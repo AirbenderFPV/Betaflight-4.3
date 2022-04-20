@@ -3,33 +3,33 @@
 
 <img src="https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/betaflight/bf_logo.png">
 
-En este repositorio iré actualizando las mejoras de **Betaflight 4.3.x** así como las configuraciones recomendadas al actualizar a esta version.   
- 
-Recordad que para usar esta versión de Configurador de Betaflight es necesario el **Betaflight Configurator version 10.8.0**.    
-Dados los errores del configurador en sus versiones 10.8.0 se aconseja el Release Candidate 3   
+En este repositorio iré actualizando las mejoras de **Betaflight 4.3.x** así como las configuraciones recomendadas al actualizar a esta versión.  
 
-Si tienes dudas de como descargarte el configurador o como alcualizar el firmware visita los repositorios:  
+Recordad que para usar esta versión de Configurador de Betaflight es necesario el **Betaflight Configurator version 10.8.0**.  
+Dados los errores del configurador en sus versiones 10.8.0 se aconseja el Release Candidate 3  
+
+Si tienes dudas de como descargarte el configurador o como actualizar el firmware visita los repositorios:   
 
 [Actualizar firmware 4.3.x] https://github.com/AirbenderFPV/Actualizar-Firmware   
 
 [Configurador de Betaflight v10.8.xx] https://github.com/betaflight/betaflight-configurator/releases/tag/10.8.0-RC3   
 
-Si aún estas usando **Betaflight Configurator version 10.7.0** lo mas aconsejable es desinstalar ese configurador previamente.  
+Si aún estás usando **Betaflight Configurator version 10.7.0** lo más aconsejable es desinstalar ese configurador previamente.  
 Para trabajar con versiones de firmware v4.2.9 se aconseja usar **Betaflight Configurator version 10.7.0**  
-Mas información sobre versiones 4.2.X: https://github.com/AirbenderFPV/Betaflight-4.2.0  
+Mas información sobre versiones 4.2.X: https://github.com/AirbenderFPV/Betaflight-4.2.0   
 
 Menú Betaflight 4.3.x  
 =====================================================================
 
 Antes de detallar las diferentes pestañas de ajuste de esta versión y sus ajustes, mencionar que se ha usado la **version 4.3 - RC2** de firmware.  
-Al instalar la versión de firmware y conectar la placa por primera vez aparecera un mensaje para **Aplicar los valores por defecto**, es muy importante hacer este paso correctamente o puede ser que betaflight no reconozca todas las propiedades de tu controladora (FC).  
+Al instalar la versión de firmware y conectar la placa por primera vez aparecerá un mensaje para **Aplicar los valores por defecto**, es muy importante hacer este paso correctamente o puede ser que betaflight no reconozca todas las propiedades de tu controladora (FC).  
 
 <img src="https://raw.githubusercontent.com/AirbenderFPV/Betaflight-4.2.0/main/images/00_Valores.PNG">  
 
 
 ### Pantalla de Ajustes  
 
-En esta versión de Betaflight es **obligatorio calibrar** nuestro almenos una vez antes de volar.  
+En esta versión de Betaflight es **obligatorio calibrar** nuestro al menos una vez antes de volar.  
 
 <img src="https://raw.githubusercontent.com/AirbenderFPV/Betaflight-4.2.0/main/images/01_Ajuste.PNG">  
 
@@ -37,27 +37,41 @@ Para **Calibrar el Acelerómetro** situar nuestro quad en una superficie plana y
 
 ### Puertos  
 
+En esta pestaña se configuran las funciones de los UART de la controladora de vuelo.    
+
 <img src="https://raw.githubusercontent.com/AirbenderFPV/Betaflight-4.2.0/main/images/02_Puertos.PNG"> 
+
+Asignar el **RX Serie** al puerto (UART) donde tengáis conectado el receptor.   
+Asignar el **MSP** al puerto (UART) donde tengáis conectado el DJI Caddx Vista.  
+Asignar los **Periféricos** en el puerto (UART) donde tengas conectado el smartAudio del VTX analógico.   
+
+En la imagen tendríamos conectado el receptor al puerto 1 (UART1). En algunas placas este puerto es el SBUS de la controladora.  
+También tendríamos conectado el sistema Caddx Vista en el puerto 5 (UART5).   
 
 
 ### Pantalla de Configuración  
 
+En esta pantalla podremos acceder a parametros de la configuración de la controladora.    
+
 <img src="https://raw.githubusercontent.com/AirbenderFPV/Betaflight-4.2.0/main/images/03_Configuración.PNG">  
 
-El **Acelerómetro** es el sensor que nos ayuda a controlar la inclinazión del quad.    
-En caso de volar en **Angle Mode** o **Horizon Mode** necesitas tener activado este sensor.  
-Revisa la pantalla de Ajustes para ver como calibrar el quad si usas esos modos.  
-Normalmente las controladoras de vuelo no trae equipado un Barómetro ni un Magnetómetro.   
+El **Acelerómetro** es el sensor que nos ayuda a controlar la inclinazión del quad.  
+En caso de volar en **Angle Mode** o **Horizon Mode** necesitas calibrar bien este sensor en la pantalla de ajustes.  
+
+Normalmente las controladoras de vuelo no trae equipado un Barómetro ni un Magnetómetro.  
 Lo mejor en estos casos es **Desactivar** estos dos sensores.  
 
-Las frequencias del sersor Giro y del PID son importantisimas para volar.  
-Estas estan condicionadas a el tipo de controladora de vuelo tengamos, una F7 irá mejor que una F4.  
-Si tienes poca experiencia es mejor dejar los ajustes por defecto.  
+Las frecuencias de actualización del Giro y del PID son importantísimas para volar.  
+Estas están condicionadas al tipo de controladora de vuelo tengamos.  
 
 Recomendaciones generales:  
 
-dshot300 -> 4k max pidloop (Recomendable para controladoras F4)  
-dshot600 -> 8k max pidloop (Recomendable para controladoras F7)     
+Frecuencia de actualización del Giro: 8K  
+Frecuencia del ciclo:  
+4K (Recomendable para controladoras F4)  
+8K (Recomendable para controladoras F7)  
+
+Repasar también los valores del protocolo **DSHOT** en la pestaña de motores.    
 
 ### Pantalla de Energía y Batería
 
