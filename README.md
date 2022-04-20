@@ -260,22 +260,33 @@ set osd_stat_bbox = OFF
 set osd_stat_bb_no = OFF  
 save  
 
+Limitar potencia de los motores según las celdas de la Lipo que usemos [https://www.youtube.com/watch?v=iUJjg3ojrbg] :  
 
+profile 0  
+set profile_name = 4S  
+set auto_profile_cell_count = 4  
+profile 1  
+set profile_name = 5S  
+set motor_output_limit = 86  
+set auto_profile_cell_count = 5  
+profile 2  
+set profile_name = XS  
+set auto_profile_cell_count = -1  
 
 #### Fuentes de información
 
 [Notas oficiales de la versión] https://github.com/betaflight/betaflight/wiki/4.2-Tuning-Notes  
 
-[UAV Tech] https://theuavtech.com/tuning/
+[Joshua Bardwell] https://www.youtube.com/watch?v=LkBWRiEGKTI  
 
-[Joshua Bardwell] https://www.youtube.com/watch?v=CCbaHjF-ZL0
+[UAV Tech] https://www.youtube.com/watch?v=znyiaN5dSxc 
 
 [QuadMx Drones] https://www.youtube.com/watch?v=tCgN-EwdSQ8   
  
 [Midronedecarreras] https://www.midronedecarreras.com/betaflight/#Descarga_el_Configurador_BLHeli_suite_32  
 
-[Multicoptero X] http://www.multicopterox.es/configuracion-betaflight-matek-f405/#ESC_beacon_configuration
-
+[Multicoptero X] http://www.multicopterox.es/configuracion-betaflight-matek-f405/#ESC_beacon_configuration  
+ 
 [Airbender_FPV] https://www.instagram.com/airbender_fpv/
 
 
