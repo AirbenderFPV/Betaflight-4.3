@@ -27,7 +27,7 @@ Al instalar la versión de firmware y conectar la placa por primera vez aparecer
 <img src="https://raw.githubusercontent.com/AirbenderFPV/Betaflight-4.2.0/main/images/00_Valores.PNG">  
 
 
-### Pantalla de Ajustes  
+## Pantalla de Ajustes  
 
 En esta versión de Betaflight es **obligatorio calibrar** nuestro al menos una vez antes de volar.  
 
@@ -48,6 +48,7 @@ Asignar los **Periféricos** en el puerto (UART) donde tengas conectado el smart
 En la imagen tendríamos conectado el receptor al puerto 1 (UART1). En algunas placas este puerto es el SBUS de la controladora.  
 También tendríamos conectado el sistema Caddx Vista en el puerto 5 (UART5).   
 
+_Bajo ningún concepto se recomienda deshabilitar el MSP del **USB VCP** ya que es la conexión con el ordenador_
 
 ### Pantalla de Configuración  
 
@@ -73,18 +74,20 @@ Frecuencia del ciclo:
 
 Repasar también los valores del protocolo **DSHOT** en la pestaña de motores.    
 
+En el apartado **Otras funcionalidades** tendrían que estar el Airmode y OSD habilitados.  
+
 ### Pantalla de Energía y Batería
 
-Esta pantalla nos ayuda con la gestión de el voltage y la corriente de nuestro quad. 
+Esta pantalla nos ayuda con la gestión del voltaje y la corriente de nuestro quad.
 
 <img src="https://raw.githubusercontent.com/AirbenderFPV/Betaflight-4.2.0/main/images/04_Energiaybateria.PNG">
 
-Para calibrar el sensor de voltaje tendremos que usar un Multimetro para saber el voltaje real de nuestra bateria.   
-Posteriormente enchufar la LiPo y incrementar/disminuir el valor de **Escala** en el medidor de voltaje hasta que el valor del medidor de voltaje concuerde con el medido con el multimetro. 
+Para calibrar el sensor de voltaje tendremos que usar un Multímetro para saber el voltaje real de nuestra batería.  
+Posteriormente, enchufar la LiPo e incrementar/disminuir el valor de **Escala** en el medidor de voltaje hasta que el valor del medidor de voltaje concuerde con el medido con el multímetro. Normalmente, este sensor viene calibrado, por lo que no es recomendable tocar los valores de fábrica.  
 
 Para calibrar el sensor de corriente podemos usar el **ADC Integrado** y ajustar el escalado tal como marca el fabricante o podemos usar la opción **Sensor ESC** si previamente lo hemos configurado en los puertos.
 
-Puedes consutar los escalados recomendados por el fabricante en el manual de tu controladora de vuelo, como en los siguientes ejemplos:  
+Puedes consultar los escalados recomendados por el fabricante en el manual de tu controladora de vuelo, como en los siguientes ejemplos:  
 
 [MAMBA F405MK2] https://www.diatone.us/collections/mamba-stack/products/mamba-f405-mk%E2%85%B1-flight-controller-stack
 
