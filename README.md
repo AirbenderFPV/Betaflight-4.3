@@ -35,7 +35,7 @@ En esta versión de Betaflight es **obligatorio calibrar** nuestro al menos una 
 
 Para **Calibrar el Acelerómetro** situar nuestro quad en una superficie plana y dar al botón de calibrar.   
 
-### Puertos  
+## Puertos  
 
 En esta pestaña se configuran las funciones de los UART de la controladora de vuelo.    
 
@@ -50,7 +50,7 @@ También tendríamos conectado el sistema Caddx Vista en el puerto 5 (UART5).
 
 _Bajo ningún concepto se recomienda deshabilitar el MSP del **USB VCP** ya que es la conexión con el ordenador_
 
-### Pantalla de Configuración  
+## Pantalla de Configuración  
 
 En esta pantalla podremos acceder a parametros de la configuración de la controladora.    
 
@@ -76,7 +76,7 @@ Repasar también los valores del protocolo **DSHOT** en la pestaña de motores.
 
 En el apartado **Otras funcionalidades** tendrían que estar el Airmode y OSD habilitados.  
 
-### Pantalla de Energía y Batería
+## Pantalla de Energía y Batería
 
 Esta pantalla nos ayuda con la gestión del voltaje y la corriente de nuestro quad.
 
@@ -97,7 +97,7 @@ Para mas información visita:
 
 [Repertorio Baterias] https://github.com/AirbenderFPV/Baterias
 
-### PREAJUSTES
+## PREAJUSTES
 
 Uno de los mayores cambios en esta version de configurador, la pantalla de Preajustes o "Presets" que pueden ser de mucha ayuda para adaptar los ajustes de tu quad.   
 No se aconseja hacer cambios y empezar poniendo presets si estas empezando en el hobby.
@@ -144,23 +144,23 @@ Giro Filtro Notch Dinámico Q =250
 Giro Filtro Notch Dinámico Min =90  
 Giro Filtro Notch Dinámico Max =350
 
-### Pantalla de Modos
+## Pantalla de Modos
 
 En esta pestaña se configuran los modos que tendrá tu quad.  
 
-### Pantalla de OSD
+## Pantalla de OSD
 
 En esta pestaña se configura el OSD.  
 Es importante añadir que en esta versión hay mas elementos compatibles con el sistema digital de DJI pero aún no podemos visualizar ciertos parametros como...  
 Si tienes problemas para visualizar el OSD tienes que revisar la conexión entre FC y VTX/Caddx.  
 
-### Pantalla de Transmisor de Video
+## Pantalla de Transmisor de Video
 
 Será necesario volver a cargar la tabla de nuestro VTX (Archivo.JSON) y tener configurado el Uart pertinente.  
 
 [Repertorio VTX] https://github.com/AirbenderFPV/VTX
 
-### MOTORES:  
+## MOTORES:  
 
 <img src="https://raw.githubusercontent.com/AirbenderFPV/Betaflight-4.2.0/main/images/07_Motores.PNG">  
 
@@ -180,7 +180,7 @@ Para la actualización de firmware de los ESC o 4in1 visita:
 
 [Repertorio ESC and 4in1] https://github.com/AirbenderFPV
 
-### Pantalla de Caja Negra
+## Pantalla de Caja Negra
 
 La caja negra nos ayuda a guardar datos de los sensores en tiempo real para su posterior analisis.  
 Para un mejor rendimiento de la controladora de vuelo, si no vamos a usar la caja negra, es mejor **desactivarla**.
@@ -192,7 +192,7 @@ https://github.com/betaflight/blackbox-log-viewer
 
 
 
-### CLI
+## CLI
 
 La consola de comandos o CLI, es una pestaña que nos deja escribir comandos a nuestra controladora minimizando el tiempo ya que podemos ajustar nuestro quad en un momento sin necesidad de recorrer pestaña a pestaña para cambiar un parametro en cada una.  
 
