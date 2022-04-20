@@ -85,8 +85,20 @@ Esta pantalla nos ayuda con la gestión del voltaje y la corriente de nuestro qu
 Para calibrar el sensor de voltaje tendremos que usar un Multímetro para saber el voltaje real de nuestra batería.  
 Posteriormente, enchufar la LiPo e incrementar/disminuir el valor de **Escala** en el medidor de voltaje hasta que el valor del medidor de voltaje concuerde con el medido con el multímetro. Normalmente, este sensor viene calibrado, por lo que no es recomendable tocar los valores de fábrica.  
 
-Para calibrar el sensor de corriente podemos usar el **ADC Integrado** y ajustar el escalado tal como marca el fabricante o podemos usar la opción **Sensor ESC** si previamente lo hemos configurado en los puertos.
+Para calibrar el sensor de corriente es un proceso más tedioso y no es obligatorio para empezar a volar.   
+Si queremos calibrarlo tenemos que contar con un **cargador que nos indique que cantidad de miliamperios (mah)** que carga en cada ciclo. Tendremos que anotar los mah cargados individualmente de cada LiPo. En el OSD de nuestro quad tendremos que visualizar los mah consumidos y anotarlos al finalizar cada vuelo. Con estos datos, iremos modificando el valor _Escala_ del **Medidor de Amperaje**   
 
+_New scale = Old scale X (OSD_mah_Consumed/mah_Charged)_  
+
+Ejemplo:
+
+Lipo cargada: 850mah = mah charged
+Valor en OSD (al finalizar vuelo): 975mah = OSD_mah_Consumed
+Escala: 400 = Old Scale
+
+Obtenemos el nuevo valor de la escala : 400*(950/850) = **447**
+
+Y repetiríamos este proceso hasta que el valor del OSD sea el mismo que el del cargador, de esta forma tendremos un control más exhaustivo del consumo de nuestra Lipo.  
 Puedes consultar los escalados recomendados por el fabricante en el manual de tu controladora de vuelo, como en los siguientes ejemplos:  
 
 [MAMBA F405MK2] https://www.diatone.us/collections/mamba-stack/products/mamba-f405-mk%E2%85%B1-flight-controller-stack
