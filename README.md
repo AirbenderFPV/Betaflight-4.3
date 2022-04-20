@@ -152,9 +152,10 @@ Personalmente he provado el valor **1.2 en ambos**, si provais alguno y no os co
 
 Es muy recomendable en esta pestaña editar los valores del **Filtro Notch Dinámico** situado en la parte inferior izquierda.  
 Aún por confirmar, los valores recomdendados y provados por Joshua Bradwell y UAV Tech en 4.2 eran:  
-Giro Filtro Notch Dinámico Q =250   
-Giro Filtro Notch Dinámico Min =90  
-Giro Filtro Notch Dinámico Max =350
+Notch Count = 4  
+Giro Filtro Notch Dinámico Q =300   
+Giro Filtro Notch Dinámico Min =125 
+Giro Filtro Notch Dinámico Max =600
 
 ## Pantalla de Modos
 
