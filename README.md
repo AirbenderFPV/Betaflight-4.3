@@ -24,6 +24,8 @@ Menú Betaflight 4.3.x
 Antes de detallar las diferentes pestañas de ajuste de esta versión y sus ajustes, mencionar que se ha usado la **version 4.3 - RC2** de firmware.  
 Al instalar la versión de firmware y conectar la placa por primera vez aparecera un mensaje para **Aplicar los valores por defecto**, es muy importante hacer este paso correctamente o puede ser que betaflight no reconozca todas las propiedades de tu controladora (FC).  
 
+<img src="https://raw.githubusercontent.com/AirbenderFPV/Betaflight-4.2.0/main/images/00_Valores.PNG">  
+
 
 ### Pantalla de Ajustes  
 
