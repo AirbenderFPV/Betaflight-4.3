@@ -74,7 +74,7 @@ Frecuencia del ciclo:
 
 Repasar también los valores del protocolo **DSHOT** en la pestaña de motores.    
 
-En el apartado **Otras funcionalidades** tendrían que estar el Airmode y OSD habilitados.  
+En el apartado **Otras funcionalidades** tendrían que estar el **Airmode y OSD habilitados**.  
 
 ## Pantalla de Energía y Batería
 
@@ -118,7 +118,7 @@ No se aconseja hacer cambios y empezar poniendo presets si estas empezando en el
 
 Es aconsejable hacer una copia de seguridad antes de hacer cambios importantes, por si tenemos que deshacer estos cambios de forma rapida.  
 
-Nota: Publicaré los ajustes y presets y podrás encontrarlos en el configurador, de momento visita el apartado de la pantalla CLI.  
+_Nota: Publicaré los ajustes y presets y podrás encontrarlos en el configurador, de momento visita el apartado de la pantalla CLI. _   
 
 
 Pantalla de Ajustar PID
@@ -215,8 +215,50 @@ Es importantisimo hacer una copia de seguridad antes de aplicar cambios en el CL
 El comando mas usual es el _diff_ que nos mostrara todos los ajustes que tenemos diferentes a la configuración inicial de betaflight.  
 Este comando es muy útil para hacer copias de seguridad, ya que podemos escribir ese comando y copiar en un .txt el resultado que nos da el CLI para tener una copia de seguridad de nuestra configuración.  
 
-El comando que no podemos olvidar es el _Save_ después de aplicar cambios tendremos que guardar siempre nuestra configuración. No os preucupeis si betaflight desconecta la controladora por un momento y teneis que volver a conectar. De esta forma estareis seguros de que se ha guardado correctamente vuestra configuración.    
+El comando que no podemos olvidar es el _Save_ después de aplicar cambios tendremos que guardar siempre nuestra configuración. No os preucupeis si betaflight desconecta la controladora por un momento y teneis que volver a conectar. De esta forma estareis seguros de que se ha guardado correctamente vuestra configuración.
 
+Os dejo mis configuraciones por si quereis provar algunos, solo teneis que copiar y pegar en el CLI.  
+Si no entiendes esta parte es mejor que no la apliques.  
+
+RATES AIRBENDER:  
+
+Los comandos pondrán automáticamente los rates de la imagen de la pestaña TASAS en tu drone.  
+
+set rates_type = BETAFLIGHT  
+set roll_rc_rate = 120  
+set pitch_rc_rate = 120  
+set yaw_rc_rate = 100  
+set roll_expo = 50  
+set pitch_expo = 50  
+set roll_srate = 70  
+set pitch_srate = 70  
+set yaw_srate = 70  
+save  
+
+OSD AIRBENDER:   
+
+Los comandos pondrán automáticamente la configuración del OSD que uso yo, el OSD es muy personalizable y es preferible que cada uno lo configure a su gusto.  
+
+set osd_rssi_alarm = 50  
+set osd_cap_alarm = 800  
+set osd_alt_alarm = 120  
+set osd_vbat_pos = 2102  
+set osd_rssi_pos = 2168  
+set osd_tim_2_pos = 0  
+set osd_flymode_pos = 2382  
+set osd_throttle_pos = 99  
+set osd_current_pos = 2116  
+set osd_mah_drawn_pos = 2084  
+set osd_craft_name_pos = 392  
+set osd_warnings_pos = 2345  
+set osd_avg_cell_voltage_pos = 2134  
+set osd_battery_usage_pos = 16  
+set osd_core_temp_pos = 67  
+set osd_stat_tim_2 = OFF  
+set osd_stat_max_spd = OFF  
+set osd_stat_bbox = OFF  
+set osd_stat_bb_no = OFF  
+save  
 
 
 
